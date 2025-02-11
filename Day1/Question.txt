@@ -1,0 +1,50 @@
+Assignment Day 1 
+Javascript Fundamentals
+Introduction:
+1. Create a simple HTML file in notepad (do not use VSCode). To this, add some javascri by: 
+a. Writing javascript between script tags 
+b. Writing javascript in a file and passing that as a src in the script t 
+2. Where to attach the script tag: 
+<html> 
+<head></head> 
+<body> 
+<h1 id="test">Hello World!</h1> 
+</body> 
+</html>
+
+Given the above html, find out what happens when you try to access the element h1 in javascript (using document.getElementById) and change its content to “Goodbye World” when the script is attached: 
+● in the head tag 
+● at the start of the body tag 
+● at the end of the body tag 
+
+Variables: 
+1. Declare a variable - let a;. On another line assign any value you like to a. Log the value of a before and after assignment. Try doing the same with const. 
+2. Use the typeof operator to find the types of different variables. Specially note what t typeof operator returns for arrays, null values and NaN. How can you find if a variable  an array or NaN besides typeof? 
+3. Use let and const to create arrays and objects. Try modifying, deleting properties within the array or object. What do you expect to happen in both cases? What actually happens in both cases. What is the difference between an object declared as a let or a const variable? 
+
+
+Type conversion and comparison: 
+1. Declare a variable let age = 25;. Write a series of if else statements that will: ○ Print child to the console if age is less than equal to 12. 
+○ Print teen to the console if age is between 13 and 18 (inclusive). 
+○ Print adult to the console if age is above 18 
+2. Do the same using switch case. 
+3. Declare a variable let arraySize = 25;. Using a for loop, add numbers from one onwards into an array till the arraySize is reached. 
+4. Accomplish the same using a while loop. 
+5. Can you use return instead of break in loops? 
+Functions: 
+1. What happens when you add a for loop/while loop/switch case block inside a function and use return instead of break? Do statements after the loop run? What is the return value? Can we pass a return value from within a loop? Can you return from inside an if block? What impact does that have? 
+2. Take a function that accepts a function as a parameter (also known as callback function). function test(callback){ 
+callback(); 
+} 
+function callbackFunc(){ 
+console.log(“Calling the callback function”) 
+return 5; 
+} 
+Explore the following cases - what is printed in the console, and what gets returned: ○ test(callbackFunc) 
+○ test(callbackFunc()) 
+○ test(() => callbackFunc()) 
+○ What happens when you return callback() from the test function? ○ What happens when you return callback from the test function?
+Operators: 
+1. What is the difference between ++i and i++? 
+2. What do you think would happen if you pass an index beyond the range of the string? Or if you pass a negative index? Try it out. 
+3. Do you think JSON.stringify would work for arrays as well? What about nested objects? What happens if we pass numbers, strings, undefined, null to JSON.stringify? 4. What 
